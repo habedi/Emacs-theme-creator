@@ -1,3 +1,5 @@
 from django.shortcuts import render
 
-# Create your views here.
+
+def index(request):
+    return HttpResponse("i'm going to show you the world on!.")
