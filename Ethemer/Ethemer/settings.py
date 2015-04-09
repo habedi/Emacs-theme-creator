@@ -55,7 +55,7 @@ ROOT_URLCONF = 'Ethemer.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['MeThemerApp/meTemplates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
