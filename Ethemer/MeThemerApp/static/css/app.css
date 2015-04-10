@@ -1,0 +1,222 @@
+/* app css stylesheet */
+html {
+    position: relative;
+    min-height:100%;
+}
+body {
+    margin: 0 0 20px;
+    background-color:#f2f2f2;
+    overflow:auto;
+    padding-bottom:2em;
+    color:#333;
+
+}
+pre {
+    font-size:120%;
+    font-family:monospace !important;
+}
+
+
+.themecreator {
+    margin-top:2em;
+}
+/* .menu { */
+/*     list-style: none; */
+/*     border-bottom: 0.1em solid black; */
+/*     margin-bottom: 2em; */
+/*     padding: 0 0 0.5em; */
+/* } */
+
+.colors {
+    margin-top:0.8em;
+}
+.btn {
+    font-size:80%o;
+    background-color:#eaeaea;
+}
+.colors > .btn {
+    margin-left:1em;
+    font-size:70%;
+}
+.colors > label {
+    font-size:85%;
+
+}
+.colors > p {
+    font-size:70%;
+    color:#333;
+}
+.colors > input {
+    font-size:90%;
+}
+
+
+
+.faceselection {
+    background-color:#fffafa;
+    border: 0.2em solid #dadada;
+
+    /* -moz-box-shadow: 0 0 10px 10px #b9bcbf; */
+    /* -webkit-box-shadow: 0 0 10px 10px #b9bcbf; */
+    /* -icab-box-shadow: 0 0 10px 10px #b9bcbf; */
+    /* -o-box-shadow: 0 0 10px 10px #b9bcbf; */
+    /* box-shadow: 0 0 10px 10px #b9bcbf; */
+    /* margin-right:0.8em; */
+    padding:1em;
+    /* margin-lefpt:0.8em; */
+    margin-bottom:2em;
+
+}
+
+.lang {
+    /* margin-bottom:2em; */
+    /* margin-left:0.8em; */
+    /* margin-right:0.8em; */
+    padding:2em;
+
+    /* width: 50%; */
+    /* float:right; */
+    /* margin-right:20px; */
+    /* margin-top:20px; */
+    /* background-color: white; */
+    border: .2em solid #dadada;
+    
+    /* -moz-box-shadow: 0 0 10px 10px #b9bcbf; */
+    /* -webkit-box-shadow: 0 0 10px 10px #b9bcbf; */
+    /* -icab-box-shadow: 0 0 10px 10px #b9bcbf; */
+    /* -o-box-shadow: 0 0 10px 10px #b9bcbf; */
+    /* box-shadow: 0 0 10px 10px #b9bcbf; */
+
+}
+.sellang {
+    padding:22px;
+    height:4px;
+}
+/* .themecreator { */
+/*     width:100%; */
+/*     margin:auto; */
+/* } */
+/* .themeprev { */
+/*     width:95%; */
+/*     float:right; */
+/*     padding:8px; */
+/*     clear:right; */
+
+/* } */
+header {
+    text-align:center;
+}
+
+
+/* .form-control { */
+/*     width:40%; */
+/*     padding:4px; */
+/*     margin-left:20px; */
+/*     float:left; */
+/*     background-color:#ffffff; */
+/*     margin-top:18px; */
+/*     background-color: white; */
+/*     border-left: .2em solid #b9bcbf; */
+/*     border-right: .2em solid #b9bcbf; */
+/*     -moz-box-shadow: 0 0 10px 10px #b9bcbf; */
+/*     -webkit-box-shadow: 0 0 10px 10px #b9bcbf; */
+/*     -icab-box-shadow: 0 0 10px 10px #b9bcbf; */
+/*     -o-box-shadow: 0 0 10px 10px #b9bcbf; */
+/*     box-shadow: 0 0 10px 10px #b9bcbf; */
+/* } */
+.colors > input {
+    margin-right:40px;
+}
+/* .savebutton { */
+/*     margin-right:auto; */
+/*     margin-left:80px; */
+/*     margin-top:22px; */
+/* } */
+footer {
+    text-align:right;
+    position: absolute;
+    bottom:0;
+    right:2em;
+    height:20px;
+    width:100%;
+    font-size:0.8em;
+    clear:both;
+}
+/* .rndbutton { */
+/*     font-size: 80%; */
+/*     margin-right:12px; */
+/* } */
+/* .rndbuttonlbl { */
+/*     font-size:80%; */
+/*     margin-left:12px; */
+/*     margin-right:4px; */
+/*     margin-bottom:0.4em; */
+    
+/* } */
+/* .savebuttons { */
+/*     margin-left:1em; */
+/* } */
+/* .savebuttons > button { */
+/*     margin-top:1em; */
+/*     margin-left:2em; */
+/* } */
+.adjbackground {
+    line-height:80%;
+}
+.row > span {
+    border-radius: 1em;
+    border:1px solid grey;
+}
+.row > label {
+    /* font-size:80%; */
+}
+code {
+    font-family:monospace;
+    font-size:110%;
+}
+
+.checkbox-inline {
+    font-size:80%;
+}
+#adjbg {
+    font-size:85%;
+    text-align:center;
+    margin-top:0.2em;
+    vertical-align:bottom;
+}
+
+#adjbg > label {
+    height:auto;
+    margin:auto;
+}
+.animate-switch-container {
+    overflow:hidden;
+
+}
+
+.animate-enter {
+	-webkit-transition: 1s linear all; /* Chrome */
+	transition: 1s linear all;
+	opacity: 0;
+}
+ 
+.animate-enter.animate-enter-active {
+	opacity: 1;
+}
+.selects {
+    background:transparent;
+    margin-right:2em;
+    padding:0.3em;
+ }
+
+.sellang {
+    margin-bottom:1em;
+
+}
+.navbar-brand {
+    color:#fafafa !important;
+    font-size:2em;
+}
+.navbar-inverse {
+    background-color:#373535;
+}

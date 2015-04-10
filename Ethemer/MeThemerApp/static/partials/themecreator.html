@@ -1,0 +1,115 @@
+  <div class="themecreator row">
+    <div class="faceselection col-md-4 col-lg-3">
+      <form role="form" action="/savetheme"  method="post">
+        <div class="colors row">
+          <label class="col-md-4"for="themename">Theme name</label>
+          <input class="col-md-6 offset-2 pull-right"required name="themename" ng-model="themename" type="text" value=""/>
+        </div>
+
+        <div class="colors row">
+          <label class="col-md-4"for="authorname">Author name</label>
+          <input class="col-md-6 offset-2 pull-right"required name="authorname"  type="text" value=""/>
+        </div>
+        <div class="colors row">
+          <label class="col-md-4" for="url">Repository url</label>
+          <input class="col-md-6 offset-2 pull-right"type="url" name="url"  value=""/>
+        </div>
+        <br/>
+        <div class="cpick">
+          <div class="colors row">
+            <label  class="col-xs-6">Background Face</label>
+            <span class="colorpreview col-xs-1 offset-1" style="background-color:{{faces.deffacebg}}">&nbsp&nbsp&nbsp&nbsp&nbsp</span>
+            <input class="col-xs-3 offset 0 pull-right" required colorpicker name="deffacebg" type="text" ng-model="faces.deffacebg" />
+          </div>
+          <div class="colors row">
+            <label for="deffacefg" class="col-xs-6">Foreground Face</label>
+            <span class="colorpreview col-xs-1 offset-1" style="background-color:{{faces.deffacefg}}">&nbsp&nbsp&nbsp&nbsp&nbsp</span>
+            <input class="col-xs-3 pull-right"required colorpicker name="deffacefg" type="text" ng-model="faces.deffacefg" />
+          </div>
+          <div class="colors row">
+            <label class="col-xs-6" for="builtinface">Builtin Face</label>
+            <span class="colorpreview col-xs-1 offset-1" style="background-color:{{faces.builtinface}}">&nbsp&nbsp&nbsp&nbsp&nbsp</span>
+            <input class="col-xs-3 pull-right"colorpicker name="builtinface" type="text" ng-model="faces.builtinface" />
+          </div>
+          <div class="colors row">
+            <label class="col-xs-6" for="stringface">String Face</label>
+            <span class="colorpreview col-xs-1 offset-1" style="background-color:{{faces.stringface}}">&nbsp&nbsp&nbsp&nbsp&nbsp</span>
+            <input class="col-xs-3 pull-right"required colorpicker name="stringface" type="text" ng-model="faces.stringface" />
+          </div>
+          <div class="colors row">
+            <label class="col-xs-6" for="keywordface">Keyword Face</label>
+            <span class="colorpreview col-xs-1 offset-1" style="background-color:{{faces.keywordface}}">&nbsp&nbsp&nbsp&nbsp&nbsp</span>
+            <input class="col-xs-3 pull-right" required colorpicker name="keywordface" type="text" ng-model="faces.keywordface" />
+          </div>
+          <div class="colors row">
+            <label class="col-xs-6"for="functionnameface">Functionname Face</label>
+            <span class="colorpreview col-xs-1 offset-1" style="background-color:{{faces.functionnameface}}">&nbsp&nbsp&nbsp&nbsp&nbsp</span>
+            <input class="col-xs-3 pull-right" required colorpicker name="functionnameface" type="text" ng-model="faces.functionnameface" />
+          </div>
+          <div class="colors row">
+            <label class="col-xs-6" for="commentface">Comment Face</label>
+            <span class="colorpreview col-xs-1 offset-1" style="background-color:{{faces.commentface}}">&nbsp&nbsp&nbsp&nbsp&nbsp</span>
+            <input class="col-xs-3 pull-right"required colorpicker name="commentface" type="text" ng-model="faces.commentface" />
+          </div>
+          <div class="colors row">
+            <label class="col-xs-6" for="variableface">Variable Face</label>
+            <span class="colorpreview col-xs-1 offset-1" style="background-color:{{faces.variableface}}">&nbsp&nbsp&nbsp&nbsp&nbsp</span>
+            <input class="col-xs-3 pull-right"required colorpicker name="variableface" type="text" ng-model="faces.variableface" />
+          </div>
+          <div class="colors row">
+            <label class="col-xs-6" for="typeface">Type Face</label>
+            <span class="colorpreview col-xs-1 offset-1" style="background-color:{{faces.typeface}}">&nbsp&nbsp&nbsp&nbsp&nbsp</span>
+            <input class="col-xs-3 pull-right" required colorpicker name="typeface" type="text" ng-model="faces.typeface" />
+          </div>
+          <div class="colors row">
+            <label class="col-xs-6" for="constantface">Constant Face</label>
+            <span class="colorpreview col-xs-1 offset-1" style="background-color:{{faces.constantface}}">&nbsp&nbsp&nbsp&nbsp&nbsp</span>
+            <input class="col-xs-3 pull-right" required colorpicker name="constantface" type="text" ng-model="faces.constantface" />
+          </div>
+          <div class="colors row">
+            <label class="col-xs-6" for="warningface">Warning Face</label>
+            <span class="colorpreview col-xs-1 offset-1" style="background-color:{{faces.warningface}}">&nbsp&nbsp&nbsp&nbsp&nbsp</span>
+            <input class="col-xs-3 pull-right" required colorpicker name="warningface" type="text" ng-model="faces.warningface" />
+          </div>
+          <div class="colors row">
+            <button type="button" class="btn col-xs-3 col-xs-offset-1" ng-click="getRandomColWarm()">Warm Colors</button>
+            <button type="button" class="btn col-xs-3 col-xs-offset-1" ng-click="getRandomColSoft()">Soft Colors</button>
+            <button type="button" class="btn col-xs-3 col-xs-offset-1" ng-click="getRandomColHappy()">Happy Colors</button>
+          </div>
+          <div class="colors row">
+
+            <button type="button" class="btn col-xs-3"ng-click="decContrast()">Red. Contrast</button>
+            <button type="button" class="btn col-xs-3" ng-click="incContrast()">Inc. Contrast</button>
+            <label class="col-xs-4 checkbox-inline" id="adjbg">
+              <input type="checkbox" class="" ng-model="adjustbg" name="adjbg"/>Adjust BG
+            </label>
+          </div>
+          <div class="colors row">
+            <button class="btn col-xs-3 col-xs-offset-1" name="sb"  type="submit" value="Done">Done</button>
+            <button type="button" class="btn col-xs-3 col-xs-offset-1" ng-click="saveTheme()">Save</button>
+            <button type="button" class="btn col-xs-3 col-xs-offset-1" ng-click="resetTheme()">Reset Theme</button>
+          </div>
+
+      </form>
+        </div>
+    </div>
+
+    <div class="lang col-md-6  col-lg-offset-1 col-lg-8" ng-style="{'background-color':faces.deffacebg}">
+      <div class="sellang" >
+        <select  class="selects" ng-model="prevlang" ng-options="language for language in languages" ng-style="{color:faces.deffacefg}">
+        </select>
+        <select class="selects" ng-model="presettheme"  ng-change="changePreset()" ng-style="{color:faces.deffacefg}">
+          <option value="preset" >preset</option>
+          <option value="warmnight">warm-night</option>
+          <option value="oldlace">oldlace</option>
+          <option value="lightsoap">light-soap</option>
+          <option value="greymatters">greymatters</option>
+          <option value="softcharcoal">soft-charcoal</option>
+          <option value="softmorning">soft-morning</option>
+          <option value="softstone">soft-stone</option>
+        </select>
+      </div>
+      <div theme-preview></div>
+    </div>
+  </div>
+</div>

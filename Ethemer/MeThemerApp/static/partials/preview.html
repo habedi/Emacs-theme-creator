@@ -1,0 +1,19 @@
+<div class="themeprev" ng-style="{'background-color': faces.deffacebg}">
+  <div class="animate-switch-container"
+       ng-animate="{enter: 'animate-enter', leave: 'animate-leave'}"
+    ng-switch on="prevlang">
+     <div class="animate-switch" ng-switch-when="python">
+       <div python-view></div>
+     </div>
+     <div class="animate-switch" ng-switch-when="ruby">
+       <div ruby-view></div>
+     </div>
+     <div class="animate-switch" ng-switch-when="haskell">
+       <div haskell-view></div>
+     </div>
+     <div class="animate-switch" ng-switch-when="javascript">
+       <div js-view></div>
+     </div>
+     <div class="animate-switch" ng-switch-when="go">
+       <div go-view></div>
+</div>
