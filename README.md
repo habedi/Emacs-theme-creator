@@ -1,3 +1,5 @@
+# My theme creator for Gnu Emacs
+
 try :
 
 * $python manage.py migrate
